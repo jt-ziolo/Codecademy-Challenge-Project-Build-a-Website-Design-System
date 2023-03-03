@@ -4,13 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://rsms.me/">
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&Bitter&family=Cutive+Mono&family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
     <title>Website Design System</title>
   </head>
 
   <body>
+    <h1 id="title">JT's Website Design System</h1>
     <h1>Colors</h1>
     <p>
       The colors shown in this system were selected from a split-complements
@@ -20,9 +25,9 @@
       <table>
         <thead>
           <tr>
-            <td>Name</td>
-            <td>Value</td>
-            <td>Usage</td>
+            <th>Name</th>
+            <th>Value</th>
+            <th>Usage</th>
           </tr>
         </thead>
         <tbody>
@@ -77,7 +82,8 @@
       <article>
         <h3>Sans-Serif Font: <em>Inter</em></h3>
         <p>
-          Good for a modern look and easy on the eyes. To be used with the
+          Good for suggesting a minimalistic modern look around small phrases or
+          pop-outs. To be used with the
           <a href="https://www.cssfontstack.com/Arial"
             >Arial Web-Safe CSS Font Stack.</a
           >
@@ -94,17 +100,20 @@
       <article>
         <h3>Serif Font: <em>Bitter</em></h3>
         <p>
-          For a more traditional look. To be used with the
+          Highly readable. Can suggest a more traditional look. To be used with
+          the
           <a href="https://www.cssfontstack.com/Palatino"
             >Palatino Web-Safe CSS Font Stack.</a
           >
+          All of the text on this page outside of the example text and headers
+          uses this font.
         </p>
         <p>
           Source:
           <a href="https://github.com/solmatas/BitterPro">GitHub</a> (also found
           on Google Fonts)
         </p>
-        <p class="serif example">
+        <p class="example">
           The quick brown fox jumps over the lazy dog.<br />THE QUICK BROWN FOX
           JUMPS OVER THE LAZY DOG.<br />0123456789.,?!":;'`@#$%^&*()[]{}\/
         </p>
@@ -126,7 +135,7 @@
             >Google Fonts.</a
           >
         </p>
-        <p class="mono example">
+        <p class="monospace example">
           The quick brown fox jumps over the lazy dog.<br />THE QUICK BROWN FOX
           JUMPS OVER THE LAZY DOG.<br />0123456789.,?!":;'`@#$%^&*()[]{}\/
         </p>
@@ -174,8 +183,8 @@
             <td>h1</td>
             <td>Used for article titles and in the website header</td>
             <td>
-              Sans-Serif (Modern), Serif (Traditional), or Monospace or Cursive
-              (Stylized)
+              Sans-Serif (Modern), Serif (Traditional and often easier to read),
+              or Monospace or Cursive (Stylized)
             </td>
             <td>26px</td>
             <td>700</td>
@@ -185,7 +194,8 @@
             <td>Used for headers in the website body.</td>
             <td>
               Same as that used for the paragraph. Alternatively, pair a Serif
-              paragraph with Sans-Serif headers or vice versa.
+              paragraph with Sans-Serif headers (as done on this page) or vice
+              versa.
             </td>
             <td>20px</td>
             <td>700</td>
@@ -193,7 +203,10 @@
           <tr>
             <td>p</td>
             <td>Used for body text in the paragraph.</td>
-            <td>Sans-Serif (Modern) or Serif (Traditional).</td>
+            <td>
+              Sans-Serif (Modern) or Serif (Traditional and often easier to
+              read).
+            </td>
             <td>16px</td>
             <td>400</td>
           </tr>
@@ -207,8 +220,8 @@
               writing).
             </td>
             <td>
-              Same as that used for the paragraph, or choose: Serif
-              (Traditional), or Monospace or Cursive (Stylized).
+              Same as that used for the paragraph, or choose: Serif (Traditional
+              and often easier to read), or Monospace or Cursive (Stylized).
             </td>
             <td>20px</td>
             <td>400</td>

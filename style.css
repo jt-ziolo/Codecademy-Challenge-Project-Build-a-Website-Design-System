@@ -8,6 +8,21 @@
   --color-spring-green: hsl(135, 90%, 80%);
   --color-future-blue: hsl(200, 90%, 80%);
   --color-vibrant-red: hsl(350, 90%, 80%);
+  font-family: "Bitter", "Palatino", "Palatino Linotype", "Palatino LT STD",
+    "Book Antiqua", "Georgia", serif;
+}
+
+.sans {
+  font-family: "Inter", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+}
+
+.monospace {
+  font-family: "Cutive Mono", "Lucida Sans Typewriter", "Lucida Console",
+    "monaco", "Bitstream Vera Sans Mono", monospace;
+}
+
+.cursive {
+  font-family: "Dancing Script", "Brush Script MT", cursive;
 }
 
 .example {
@@ -17,10 +32,6 @@
   margin-left: 60px;
   padding: 10px;
   display: inline-block;
-}
-
-.sans {
-  font-family: "Inter", sans-serif;
 }
 
 #color-main {
@@ -33,7 +44,13 @@
   background-color: var(--color-vibrant-red);
 }
 
+#title {
+  font-family: "Dancing Script", "Brush Script MT", cursive;
+  text-align: center;
+}
+
 h1 {
+  font-family: "Inter", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
   font-size: 26px;
   font-weight: 700;
 }
@@ -43,6 +60,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: "Inter", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
   font-size: 20px;
   font-weight: 700;
 }
