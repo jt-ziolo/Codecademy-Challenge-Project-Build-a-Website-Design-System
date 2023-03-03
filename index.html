@@ -1,51 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Design System</title>
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Website Design System</title>
-    </head>
-
-    <body>
-        <h1>Colors</h1>
-        <p>The colors shown in this system were selected from a split-complements color scheme.</p>
-        <section>
-            <table>
-                <thead>
-                    <tr>
-                        <td>Name</td>
-                        <td>Value</td>
-                        <td>Usage</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Off-White</td>
-                        <td id="color-main">color: hsl(135, 0%, 95%)</td>
-                        <td>Used to format the background of the web page (outside of dark mode styles).</td>
-                    </tr>
-                    <tr>
-                        <td>Spring Green</td>
-                        <td id="color-main">color: hsl(135, 90%, 80%)</td> <!-- #8ff0a4 -->
-                        <td>As one of the two primary colors used to stylize the web page.</td>
-                    </tr>
-                    <tr>
-                        <td>Future Blue</td>
-                        <td id="color-main">color: hsl(200, 90%, 80%)</td> <!-- #8fc8f0 -->
-                        <td>As one of the two primary colors used to stylize the web page. Used in place of Spring Green
-                            when two nearby elements need to stand out from each other.</td>
-                    </tr>
-                    <tr>
-                        <td>Vibrant Red</td>
-                        <td id="color-main">color: hsl(350, 90%, 80%)</td> <!-- #f08fa1 -->
-                        <td>As bold contrast to the other colors, used to grab the user's attention and highlight
-                            important elements on the page.</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-    </body>
-
+  <body>
+    <h1>Colors</h1>
+    <p>
+      The colors shown in this system were selected from a split-complements
+      color scheme.
+    </p>
+    <section>
+      <table>
+        <thead>
+          <tr>
+            <td>Name</td>
+            <td>Value</td>
+            <td>Usage</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Off-White</td>
+            <td>color: hsl(135, 0%, 95%)</td>
+            <td>
+              Used to format the background of the web page (outside of dark
+              mode styles). The background of this web page is set to this
+              color.
+            </td>
+          </tr>
+          <tr>
+            <td>Spring Green</td>
+            <td id="color-main">color: hsl(135, 90%, 80%)</td>
+            <!-- #8ff0a4 -->
+            <td>
+              As one of the two primary colors used to stylize the web page.
+            </td>
+          </tr>
+          <tr>
+            <td>Future Blue</td>
+            <td id="color-alt">color: hsl(200, 90%, 80%)</td>
+            <!-- #8fc8f0 -->
+            <td>
+              As one of the two primary colors used to stylize the web page.
+              Used in place of Spring Green when two nearby elements need to
+              stand out from each other.
+            </td>
+          </tr>
+          <tr>
+            <td>Vibrant Red</td>
+            <td id="color-contrast">color: hsl(350, 90%, 80%)</td>
+            <!-- #f08fa1 -->
+            <td>
+              Provides contrast to the other colors, used to grab the user's
+              attention and highlight important elements on the page.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section>
+      <h1>Fonts</h1>
+      <h2>Custom Fonts and Fallback Font Stacks</h2>
+      <p>
+        All fonts included below are licensed under the
+        <a href="http://scripts.sil.org/OFL"
+          >SIL Open Font License, Version 1.1.</a
+        >
+      </p>
+      <article>
+        <h3>Sans-Serif Font: <em>Inter</em></h3>
+        <p>
+          Good for a modern look and easy on the eyes. To be used with the
+          <a href="https://www.cssfontstack.com/Arial"
+            >Arial Web-Safe CSS Font Stack.</a
+          >
+        </p>
+        <p>
+          Source: <a href="https://github.com/rsms/inter/">GitHub</a> (also
+          found on Google Fonts)
+        </p>
+        <p class="indent sans example">
+          The quick brown fox jumps over the lazy dog.<br />THE QUICK BROWN FOX
+          JUMPS OVER THE LAZY DOG.<br />0123456789.,?!":;'`@#$%^&*()[]{}\/
+        </p>
+      </article>
+      <article>
+        <h3>Serif Font: <em>Bitter</em></h3>
+        <p>
+          For a more traditional look. To be used with the
+          <a href="https://www.cssfontstack.com/Palatino"
+            >Palatino Web-Safe CSS Font Stack.</a
+          >
+        </p>
+        <p>
+          Source:
+          <a href="https://github.com/solmatas/BitterPro">GitHub</a> (also found
+          on Google Fonts)
+        </p>
+        <p class="indent serif example">
+          The quick brown fox jumps over the lazy dog.<br />THE QUICK BROWN FOX
+          JUMPS OVER THE LAZY DOG.<br />0123456789.,?!":;'`@#$%^&*()[]{}\/
+        </p>
+      </article>
+      <article>
+        <h3>Monospace Font: <em>Cutive Mono</em></h3>
+        <p>
+          A stylistic monospace font that is useful for emulating the look of
+          text written using a typewriter. Best used in sylistic titles,
+          taglines, block quotes, or asides. To be used with the
+          <a href="https://www.cssfontstack.com/Lucida-Sans-Typewriter"
+            >Lucia Sans Typewriter Web-Safe CSS Font Stack.</a
+          >
+        </p>
+        <p>
+          Source:
+          <a
+            href="https://fonts.google.com/specimen/Cutive+Mono/about?category=Monospace"
+            >Google Fonts.</a
+          >
+        </p>
+        <p class="indent mono example">
+          The quick brown fox jumps over the lazy dog.<br />THE QUICK BROWN FOX
+          JUMPS OVER THE LAZY DOG.<br />0123456789.,?!":;'`@#$%^&*()[]{}\/
+        </p>
+      </article>
+      <article>
+        <h3>Cursive Font: <em>Dancing Script</em></h3>
+        <p>
+          A lively casual script based on 50's typefaces. Best used in stylistic
+          titles, taglines, block quotes, or asides. To be used with the
+          <a href="https://www.cssfontstack.com/Brush-Script-MT"
+            >Brush Script MT Web-Safe CSS Font Stack.</a
+          >
+        </p>
+        <p>
+          Source:
+          <a href="https://fonts.google.com/specimen/Dancing+Script"
+            >Google Fonts.</a
+          >
+        </p>
+        <p class="indent cursive example">
+          The quick brown fox jumps over the lazy dog.<br />THE QUICK BROWN FOX
+          JUMPS OVER THE LAZY DOG.<br />0123456789.,?!":;'`@#$%^&*()[]{}\/
+        </p>
+      </article>
+    </section>
+    <section>
+      <h2>Font Dimensions</h2>
+      <p>
+        The guidelines below were selected based on a golden ratio calculation.
+        Fonts on this page are styled using these guidelines. All font
+        dimensions are selected to work with a line height of 26px.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Tag Name</th>
+            <th>Usage</th>
+            <th>Font Family Options</th>
+            <th>Font Size</th>
+            <th>Font Weight</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>h1</td>
+            <td>Used for article titles and in the website header</td>
+            <td>
+              Sans-Serif (Modern), Serif (Traditional), or Monospace or Cursive
+              (Stylized)
+            </td>
+            <td>26px</td>
+            <td>700</td>
+          </tr>
+          <tr>
+            <td>h2 - h6</td>
+            <td>Used for headers in the website body.</td>
+            <td>
+              Same as that used for the paragraph. Alternatively, pair a Serif
+              paragraph with Sans-Serif headers or vice versa.
+            </td>
+            <td>20px</td>
+            <td>700</td>
+          </tr>
+          <tr>
+            <td>p</td>
+            <td>Used for body text in the paragraph.</td>
+            <td>Sans-Serif (Modern) or Serif (Traditional).</td>
+            <td>16px</td>
+            <td>400</td>
+          </tr>
+          <tr>
+            <td>blockquote, aside</td>
+            <td>
+              Used for blockquotes (long quotations placed within an indented
+              section within an article) or asides (either text from the article
+              that is repeated due to its importance, or "footnote"-type text
+              that provides contextual information outside the flow of the
+              writing).
+            </td>
+            <td>
+              Same as that used for the paragraph, or choose: Serif
+              (Traditional), or Monospace or Cursive (Stylized).
+            </td>
+            <td>20px</td>
+            <td>400</td>
+          </tr>
+          <tr>
+            <td>pre</td>
+            <td>
+              Used for preformatted text, like when demonstrating code in a code
+              block.
+            </td>
+            <td>
+              Select a popular source code font (e.g. Source Code Pro), and/or
+              use the
+              <a href="https://www.cssfontstack.com/Brush-Script-MT"
+                >Brush Script MT Web-Safe CSS Font Stack.</a
+              >
+            </td>
+            <td>14px</td>
+            <td>400</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </body>
 </html>
