@@ -1,0 +1,40 @@
+:root {
+  --color-off-white: hsl(135, 0%, 95%);
+  --color-spring-green: hsl(135, 90%, 80%);
+  --color-future-blue: hsl(200, 90%, 80%);
+  --color-vibrant-red: hsl(350, 90%, 80%);
+}
+
+#color-main {
+    background-color: var(--color-spring-green);
+}
+#color-alt {
+    background-color: var(--color-future-blue);
+}
+#color-contrast {
+    background-color: var(--color-vibrant-red);
+}
+
+* {
+  background-color: var(--color-off-white);
+  line-height: 26px;
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+}
