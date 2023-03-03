@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&Bitter&family=Cutive+Mono&family=Dancing+Script&display=swap"
       rel="stylesheet"
     />
-    <title>Website Design System</title>
+    <title>JT's Website Design System</title>
   </head>
 
   <body>
@@ -32,8 +32,8 @@
         </thead>
         <tbody>
           <tr>
-            <td>Off-White</td>
-            <td>color: hsl(135, 0%, 95%)</td>
+            <td class="must-nowrap">Off-White</td>
+            <td class="must-nowrap">color: hsl(135, 0%, 95%)</td>
             <td>
               Used to format the background of the web page (outside of dark
               mode styles). The background of this web page is set to this
@@ -41,16 +41,16 @@
             </td>
           </tr>
           <tr>
-            <td>Spring Green</td>
-            <td id="color-main">color: hsl(135, 90%, 80%)</td>
+            <td class="must-nowrap">Spring Green</td>
+            <td class="must-nowrap" id="color-main">color: hsl(135, 90%, 80%)</td>
             <!-- #8ff0a4 -->
             <td>
               As one of the two primary colors used to stylize the web page.
             </td>
           </tr>
           <tr>
-            <td>Future Blue</td>
-            <td id="color-alt">color: hsl(200, 90%, 80%)</td>
+            <td class="must-nowrap">Future Blue</td>
+            <td class="must-nowrap" id="color-alt">color: hsl(200, 90%, 80%)</td>
             <!-- #8fc8f0 -->
             <td>
               As one of the two primary colors used to stylize the web page.
@@ -59,8 +59,8 @@
             </td>
           </tr>
           <tr>
-            <td>Vibrant Red</td>
-            <td id="color-contrast">color: hsl(350, 90%, 80%)</td>
+            <td class="must-nowrap">Vibrant Red</td>
+            <td class="must-nowrap" id="color-contrast">color: hsl(350, 90%, 80%)</td>
             <!-- #f08fa1 -->
             <td>
               Provides contrast to the other colors, used to grab the user's
@@ -172,46 +172,52 @@
         <thead>
           <tr>
             <th>Tag Name</th>
-            <th>Usage</th>
             <th>Font Family Options</th>
             <th>Font Size</th>
             <th>Font Weight</th>
+            <th>Usage</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>h1</td>
-            <td>Used for article titles and in the website header</td>
+            <td class="must-nowrap">h1</td>
             <td>
               Sans-Serif (Modern), Serif (Traditional and often easier to read),
               or Monospace or Cursive (Stylized)
             </td>
-            <td>26px</td>
-            <td>700</td>
+            <td class="must-nowrap">26px</td>
+            <td class="must-nowrap">700</td>
+            <td>Used for article titles and in the website header</td>
           </tr>
           <tr>
-            <td>h2 - h6</td>
-            <td>Used for headers in the website body.</td>
+            <td class="must-nowrap">h2 - h6</td>
             <td>
               Same as that used for the paragraph. Alternatively, pair a Serif
               paragraph with Sans-Serif headers (as done on this page) or vice
               versa.
             </td>
-            <td>20px</td>
-            <td>700</td>
+            <td class="must-nowrap">20px</td>
+            <td class="must-nowrap">700</td>
+            <td>Used for headers in the website body.</td>
           </tr>
           <tr>
-            <td>p</td>
-            <td>Used for body text in the paragraph.</td>
+            <td class="must-nowrap">p</td>
             <td>
               Sans-Serif (Modern) or Serif (Traditional and often easier to
               read).
             </td>
-            <td>16px</td>
-            <td>400</td>
+            <td class="must-nowrap">16px</td>
+            <td class="must-nowrap">400</td>
+            <td>Used for body text in the paragraph.</td>
           </tr>
           <tr>
-            <td>blockquote, aside</td>
+            <td class="must-nowrap">blockquote, aside</td>
+            <td>
+              Same as that used for the paragraph, or choose: Serif (Traditional
+              and often easier to read), or Monospace or Cursive (Stylized).
+            </td>
+            <td class="must-nowrap">20px</td>
+            <td class="must-nowrap">400</td>
             <td>
               Used for blockquotes (long quotations placed within an indented
               section within an article) or asides (either text from the article
@@ -219,19 +225,9 @@
               that provides contextual information outside the flow of the
               writing).
             </td>
-            <td>
-              Same as that used for the paragraph, or choose: Serif (Traditional
-              and often easier to read), or Monospace or Cursive (Stylized).
-            </td>
-            <td>20px</td>
-            <td>400</td>
           </tr>
           <tr>
-            <td>pre</td>
-            <td>
-              Used for preformatted text, like when demonstrating code in a code
-              block.
-            </td>
+            <td class="must-nowrap">pre</td>
             <td>
               Select a popular source code font (e.g. Source Code Pro), and/or
               use the
@@ -239,11 +235,41 @@
                 >Brush Script MT Web-Safe CSS Font Stack.</a
               >
             </td>
-            <td>14px</td>
-            <td>400</td>
+            <td class="must-nowrap">14px</td>
+            <td class="must-nowrap">400</td>
+            <td>
+              Used for preformatted text, like when demonstrating code in a code
+              block.
+            </td>
           </tr>
         </tbody>
       </table>
     </section>
+    <section>
+      <h1>Notes on Text Formatting</h1>
+      <ul>
+        <li>
+          Always prefer ragged-right text margins over justified margins, as
+          they are easier to read.
+        </li>
+        <li>
+          Inline-block formatting can be used to limit the effects of
+          background-color on text to the space taken up by the text itself.
+        </li>
+        <li>
+          All content should be centered, but allowed to take up 75 to 90% of
+          the width of the screen.
+        </li>
+        <li>
+          Select the <strong>ul</strong> or <strong>ol</strong> tags as opposed
+          to their child tags when applying alignment rules.
+        </li>
+        <li>
+          Add <strong>top-margin</strong> to headers to keep text spaced
+          appropriately, accounting for margin collapse.
+        </li>
+      </ul>
+    </section>
+    <br />
   </body>
 </html>
